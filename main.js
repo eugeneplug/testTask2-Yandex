@@ -1,3 +1,5 @@
+
+// slider 1
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -25,7 +27,7 @@ let swiper = new Swiper(".mySwiper", {
     },
   });
 
-
+// slider 2
   let swiper2 = new Swiper(".mySwiper2", {
     navigation: {
       nextEl: ".main__block__four__slider1__navigation__next",
@@ -47,13 +49,7 @@ let swiper = new Swiper(".mySwiper", {
 
 
 
-
-//   let swiperPagination = document.querySelector ('.swiper-pagination');
-//   swiperPagination.style.zIndex = '999'
-
-
-// явяв
-
+// функция перелистывания слайдов 
 
 let next = document.querySelector(".main__block__four__row__btns__next");
 let prev = document.querySelector(".main__block__four__row__btns__prev");
@@ -62,49 +58,9 @@ function clickAuto() {
     next.click();
 }
 
-// setInterval(clickAuto, 4000);
-
 setTimeout(function() {
     NextTime()
 }, 2000); 
-
-
-
-// function NextTime() {
-//     setTimeout(function() {
-//         next.click();
-//     }, 2000); 
-
-//     setTimeout(function() {
-//         next.click();
-//     }, 4000); 
-
-//     setTimeout(function() {
-//         next.click();
-//     }, 6000); 
-
-//     setTimeout(function() {
-//         prev.click();
-//     }, 8000);
-
-//     setTimeout(function() {
-//         prev.click();
-//     }, 10000);
-
-//     setTimeout(function() {
-//         prev.click();
-//     }, 12000);
-    
-// }
-
-
-
-
-
-
-
-
-    
 
 function clickNext(count) {
     if (count > 0) {
@@ -131,7 +87,7 @@ function clickPrev(count) {
 
 clickNext(3); 
 
-
+// изменение размера img 
 
 let imgW = document.querySelectorAll('.slider__block__img img');
 
@@ -156,7 +112,7 @@ imgW.forEach(img => {
 
 
 
-
+// изменение цвета точек
 
 let bullets = document.querySelectorAll('.swiper-pagination-bullet');
 
